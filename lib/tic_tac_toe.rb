@@ -33,11 +33,7 @@ class TicTacToe
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
-  
-  def welcome
-    puts "Welcome to Tic Tac Toe!"
-  end
-  
+ 
   def input_to_index(user_input)
     user_input.to_i - 1
   end
@@ -55,7 +51,16 @@ class TicTacToe
   end
   
   def turn 
-    
+    puts "Please enter 1-9:"
+    input = gets.strip
+    index = input_to_index(input)
+    if valid_move?(board, index)
+     move(board, index, current_player(board))
+     display_board(board)
+    else
+     turn(board)
+    end
+end
   
   
   
