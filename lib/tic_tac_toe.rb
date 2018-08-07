@@ -43,5 +43,5 @@ class TicTacToe
     input = input.to_i - 1 
   end
   
-  def position_taken
-    if @board 
+  def position_taken?(index)
+     
