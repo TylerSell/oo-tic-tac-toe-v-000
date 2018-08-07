@@ -11,11 +11,14 @@ class TicTacToe
   ]
   
   def initialize
-    @board = board || Array.new(9. " ")
+    @board = Array.new(9. " ")
   end
   
   def current_player
-    turn_count % 2 == 0 ? "X" : "O"
+    if turn_count % 2 == 0 
+      "X"
+    else
+      "O"
   end
   
   def turn_count
