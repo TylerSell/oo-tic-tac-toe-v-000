@@ -34,13 +34,8 @@ class TicTacToe
     puts "Welcome to Tic Tac Toe!"
   end
   
-  def play(input)
-    puts "Please enter 1-9"
-    input = gets.strip
-  end
-  
-  def input_to_index(input)
-    input.to_i - 1 
+  def input_to_index(user_input)
+    user_input.to_i - 1
   end
   
   def position_taken?(index)
