@@ -24,6 +24,6 @@ class TicTacToe
   end
   
   def current_player
-    @board
+    @board.count{
   
   
