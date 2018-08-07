@@ -19,6 +19,7 @@ class TicTacToe
       "X"
     else
       "O"
+    end
   end
   
   def turn_count
