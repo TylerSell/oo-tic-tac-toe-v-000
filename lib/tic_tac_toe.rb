@@ -10,9 +10,8 @@ class TicTacToe
     [2, 4, 6],
   ]
   
-  def initialize
+  def initialize(board = nil)
     @board = Array.new(9. " ")
-    end
   end
   
   def current_player
