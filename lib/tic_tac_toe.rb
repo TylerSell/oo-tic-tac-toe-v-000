@@ -1,11 +1,4 @@
-  def welcome
-    puts "Welcome to Tic Tac Toe!"
-  end
-  
-  def play
-    puts "Please enter 1-9"
-    input = gets.strip
-  end
+
   
 class TicTacToe 
   WIN_COMBINATIONS = [
@@ -37,4 +30,11 @@ class TicTacToe
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
+  end  def welcome
+    puts "Welcome to Tic Tac Toe!"
+  end
+  
+  def play
+    puts "Please enter 1-9"
+    input = gets.strip
   end
