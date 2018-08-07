@@ -50,6 +50,9 @@ class TicTacToe
     @board[index] = current_player
   end
   
+  def valid_move?(index)
+    
+  
   
   
   
