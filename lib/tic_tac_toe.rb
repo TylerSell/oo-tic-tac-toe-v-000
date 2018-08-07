@@ -81,6 +81,11 @@ class TicTacToe
     false
   end
   
+  def full?
+    @board.all? do |filled|
+      filled == "X" || filled == "O"
+    end
+  end
   
   
   
