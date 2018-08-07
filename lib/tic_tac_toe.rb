@@ -77,8 +77,7 @@ class TicTacToe
       end
     }
   
-  else 
-    false
+    return false
   end
   
   def full?
