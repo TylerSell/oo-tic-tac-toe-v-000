@@ -39,7 +39,7 @@ class TicTacToe
   end
   
   def position_taken?(index)
-    @board[location] != " " && @board[location] != "" 
+    @board[index] != " " && @board[index] != "" 
   end
   
   def move(index, current_player)
