@@ -1,5 +1,3 @@
-
-  
 class TicTacToe 
   WIN_COMBINATIONS = [
     [0, 1, 2]
@@ -30,7 +28,9 @@ class TicTacToe
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
-  end  def welcome
+  end
+  
+  def welcome
     puts "Welcome to Tic Tac Toe!"
   end
   
@@ -38,3 +38,10 @@ class TicTacToe
     puts "Please enter 1-9"
     input = gets.strip
   end
+  
+  def input_to_integer
+    input = input.to_i - 1 
+  end
+  
+  def position_taken
+    if @board 
