@@ -122,4 +122,8 @@ class TicTacToe
   end
   
 end
+
+def welcome
+  puts "Welcome to Tic Tac Toe!"
+end
   
