@@ -1,3 +1,12 @@
+  def welcome
+    puts "Welcome to Tic Tac Toe!"
+  end
+  
+  def play
+    puts "Please enter 1-9"
+    input = gets.strip
+  end
+  
 class TicTacToe 
   WIN_COMBINATIONS = [
     [0, 1, 2]
@@ -14,13 +23,6 @@ class TicTacToe
     @board = board || Array.new(9. " ")
   end
   
-  def welcome
-    puts "Welcome to Tic Tac Toe!"
-  end
   
-  def play
-    puts "Please enter 1-9"
-    input = gets.strip
-  end
   
   
